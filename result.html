@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Adidas臺灣門市查詢系統</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css' />
+    <base target="_blank">
+    <?!= include('style.css'); ?>
+</head>
+<body style="background-color:##F0FFF0">
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-10 mx-auto text-center">
+                <h1 class="text-primary">門市查詢結果</h1>
+                 <button class="btn btn-success">
+                        <a href="http://www.adidas.com/us" target="_blank" style="color:white;">Adidas官網網站</a>
+                      </button>
+                 <button class="btn btn-success">
+                        <a href="https://www.adidas.com.tw/" target="_blank" style="color:white;">Adidas臺灣官網</a>
+                      </button>
+                <table class="table table-bordered table-striped table-hover mt-3">
+                    <thead>
+                        <tr class="bg-primary text-white">
+                            <th scope="col" colspan="4"><?= C_Name ?></th>  
+                        </tr>
+                        <tr class="text-blue">
+                            <center>
+                            <td width="10%">No</td>
+                            <td width="20%">Store</td>
+                            <td width="20%">Contact Number</td>
+                            <td width="70%">Address</td>
+                            </center>
+                        </tr>
+                     </thead>
+                    <tbody text-green>
+                      <? var data=showTable(id); ?>
+                         <? for (var i = 0 ; i < data.length; i++) { ?>
+                          <tr>
+                           <th scope="row"> <?= (i+1) ?> </th>
+                           <td> <?= data[i][1] ?> </td>
+                           <td> <?= data[i][2] ?> </td>
+                           <td> <?= data[i][3] ?> </td>
+                           
+                          </tr>
+                        <? } ?>    
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="4" class="text-middle bg-black text-black">
+                                <p class="mb-0">查詢結果：共計顯示<?= data.length ?>筆資料，如需要再次使用請返回上一頁，謝謝您。</p>
+                            </td>
+                        </tr>
+                        <tr>
+                          <td colspan="4" class="text-middle text-black">
+                             <p class="mb-0">--程式設計：東海大學資管三 S09490015 江其澤--</p>
+                          </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
