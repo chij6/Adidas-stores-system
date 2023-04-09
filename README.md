@@ -1,6 +1,6 @@
 # [Adidas分店查詢系統](https://script.google.com/macros/s/AKfycby8VuuoogOhUCQDCFmulAK6O885hYvj96ciR8Gi7Zu_bRSsuJNPW5bucwZgz1hxXe1m/exec)
 ## 程式說明
-* 此專案使用 : JavaScript、HTML、CSS、部分關聯資料庫概念
+* 此專案使用 : *JavaScript*、*HTML*、*CSS*、部分關聯資料庫概念
 * 此網頁設計先利用Google試算表「建立資料庫」。
 * 接著使用其中的擴充功能-「App Script」作為網站部屬工具。
 
