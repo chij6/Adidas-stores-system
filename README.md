@@ -1,4 +1,4 @@
-# <font color=#0000FF>Adidas-Taiwan-Store-Query-sSystem</font>
+# <font color=#0000FF>Adidas-Taiwan-Store-Query-System</font>
 
 ## <font color=#FF6600>About The Project</font>
 This project is a web-based store locator for Adidas locations in Taiwan. It is built using Google Apps Script and leverages Google Sheets as a database to store and retrieve store information. The user can select a region from a dropdown menu to view a list of all Adidas stores in that specific area, including their name, contact number, and address.
